@@ -35,10 +35,9 @@ x3
 - [x] If no input box pops up. hit Refresh
 - [x] Enjoy :joy:
 
-### NOTE : .CRX file of the extension is available with the name of SpeedUpIB.crx, one can use that also
-
-#### NOTE: The extenstion will work for every lecture page you visit
-#### NOTE: Manually turn it down incase no need or input 1 each time
+###### NOTE : .CRX file of the extension is available with the name of SpeedUpIB.crx, one can use that also
+###### NOTE: The extenstion will work for every lecture page you visit
+###### NOTE: Manually turn it down incase no need or input 1 each time
 
 Thanks! :heart:
 
