@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Speed Up IB Extension",
+    "version": "0.0.1",
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+    "content_scripts": [{
+        "matches": [
+            "https://www.interviewbit.com/academy/mentee-dashboard/classroom/*/"
+        ],
+
+        "js": [
+            "./core/run.js"
+        ]
+    }],
+
+
+    "browser_action": {
+        "default_icon": "./utils/icons/icon.png"
+    },
+
+    "permissions": [
+        "webNavigation",
+        "*://*/*",
+        "https://*/*"
+    ]
+}
