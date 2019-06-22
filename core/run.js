@@ -17,7 +17,7 @@ function waitingForAngular() {
 
     console.log("Anshul's Extension Works");
     const target = document.querySelector('video').parentElement;
-
+    document.querySelector('video').setAttribute('controlslist', 'download');
     let sliderform = document.createElement('div');
 
     sliderform.innerHTML =
