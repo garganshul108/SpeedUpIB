@@ -9,6 +9,10 @@
 
 ### Improvement
 - Implemented Slider for the Speed Input
+
+![Screenshot](https://raw.github.com/garganshul108/SpeedUpIB/master/Screenshots/View1.png)
+
+
 ## :cloud: Installation
 
 - [x] Clone the repository
