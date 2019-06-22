@@ -12,6 +12,7 @@
 - Added Download Option
 
 ![Screenshot](https://raw.github.com/garganshul108/SpeedUpIB/master/Screenshots/View1.png)
+![Screenshot](https://raw.github.com/garganshul108/SpeedUpIB/master/Screenshots/DownloadAdded.png)
 
 
 ## :cloud: Installation
