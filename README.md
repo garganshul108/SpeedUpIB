@@ -1,4 +1,4 @@
-# SpeedUpIB: Proto 2
+# SpeedUpIB: Proto 3
 
 @author : [ANSHUL GARG](https://github.com/garganshul108)
 > Speed Up your archieved lectures upto 3x using this extension
@@ -9,6 +9,7 @@
 
 ### Improvement
 - Implemented Slider for the Speed Input
+- Added Download Option
 
 ![Screenshot](https://raw.github.com/garganshul108/SpeedUpIB/master/Screenshots/View1.png)
 
