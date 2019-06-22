@@ -1,25 +1,51 @@
-function getInput() {
-    return new Promise((resolve, reject) => {
-        let input = parseFloat(prompt("Speed Factor: "));
-        // console.log(parseFloat(input));
-        // console.log(typeof(parseFloat(input)));
-        if (isNaN(input)) {
-            alert("Incorrect input for speed");
-            reject(new Error("Incorrect input for speed"));
-        } else if (input > 3.0) {
-            alert("Too high for Speed");
-            reject(new Error("Too high for Speed"));
-        } else resolve(parseFloat(input));
-    });
+let speedSlider;
+
+let speeding = false;
+
+function speedUp(event) {
+    if (speeding) {
+
+        let speedUpto = speedSlider.value;
+        // console.log(speedUpto);
+        document.querySelector('video').playbackRate = speedUpto;
+    }
+
 }
 
-setTimeout(() => {
-    console.log("Anshul's Extension Works");
-    getInput()
-        .then((result) => {
-            document.querySelector('video').playbackRate = result;
-        }).catch((err) => {
-            console.log("''Extension says \n\n", err.message, "\n\n''");
-        });
+function waitingForAngular() {
 
-}, 2000);
+
+    console.log("Anshul's Extension Works");
+    const target = document.querySelector('video').parentElement;
+
+    let sliderform = document.createElement('div');
+
+    sliderform.innerHTML =
+        `
+            <input type="range" min="0.25" max="3.0" value="1.0" step="0.25" id="speedSlider" class="slider"/>    
+        `;
+
+    let sliderformclass = document.createAttribute('class');
+    sliderformclass.value = 'slidercontainer';
+    sliderform.setAttributeNode(sliderformclass);
+
+    target.appendChild(sliderform);
+
+    speedSlider = document.getElementById('speedSlider');
+    speedSlider.addEventListener('mousedown', function(event) {
+        speeding = true;
+        speedUp(event);
+    });
+    speedSlider.addEventListener('mousemove', function(event) {
+        speedUp(event);
+    });
+    speedSlider.addEventListener('mouseup', function() {
+        setTimeout(() => {
+            speeding = false;
+        }, 100);
+    });
+
+
+}
+
+setTimeout(waitingForAngular, 2000);

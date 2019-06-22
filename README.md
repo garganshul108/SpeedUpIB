@@ -1,4 +1,4 @@
-# SpeedUpIB: Proto 1
+# SpeedUpIB: Proto 2
 
 @author : [ANSHUL GARG](https://github.com/garganshul108)
 > Speed Up your archieved lectures upto 3x using this extension
@@ -7,7 +7,8 @@
 >  - Temporary Solution
 > 
 
-
+### Improvement
+- Implemented Slider for the Speed Input
 ## :cloud: Installation
 
 - [x] Clone the repository
@@ -19,25 +20,11 @@ chrome://extension
 - [x] Click on 'Load Unpacked Package'
 - [x] Select the location of the Repo
 - [x] Goto InterviewBit Academy Lectures
-- [x] A pop up box appears
-- [x] Type the PlayBack Speed in numbers
-```
-2
-```
-- [x] Speed over 3.0 is not allowed
-- [x] String inputs are not accepted
-```
-anshul
-hello
-x3
-3x
-```
-- [x] If no input box pops up. hit Refresh
+- [x] Speed Slider is available just below the video
+- [x] Drag to Desired Speed (min: 0.25, max:3.0)
 - [x] Enjoy :joy:
 
-###### NOTE : .CRX file of the extension is available with the name of SpeedUpIB.crx, one can use that also
 ###### NOTE: The extenstion will work for every lecture page you visit
-###### NOTE: Manually turn it down incase no need or input 1 each time
 
 Thanks! :heart:
 

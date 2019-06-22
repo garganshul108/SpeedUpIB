@@ -12,6 +12,10 @@
 
         "js": [
             "./core/run.js"
+        ],
+
+        "css": [
+            "./extension.css"
         ]
     }],
 
