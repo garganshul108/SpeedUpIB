@@ -36,7 +36,7 @@ function waitingForAngular() {
     let sliderform = document.createElement('div');
     sliderform.innerHTML =
         ` 
-            <h5>Speed Factor :x<span id="speedDisplay">1</span></h5>
+            <h5>Speed Factor x<span id="speedDisplay">1</span> (Drag to change)</h5>
             <input type="range" min="0.25" max="3.0" value="1.0" step="0.25" id="speedSlider" class="slider"/>    
         `;
     let sliderformclass = document.createAttribute('class');
