@@ -10,7 +10,7 @@ function speedUp(event) {
         let speedUpto = speedSlider.value;
         console.log(speedUpto);
 
-        for (video of videoTabs) {
+        for (var video of videoTabs) {
             video.playbackRate = speedUpto;
         }
 
@@ -28,7 +28,7 @@ function waitingForAngular() {
 
     // added download option for each video on page
 
-    for (video of videoTabs) {
+    for (var video of videoTabs) {
         video.setAttribute('controlslist', 'download');
     }
 
