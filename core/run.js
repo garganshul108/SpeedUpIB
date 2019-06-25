@@ -29,10 +29,10 @@ function scriptEntry() {
 
     videoTabs = document.getElementsByTagName('video');
     target = document.querySelector('video').parentElement;
-    console.log(target);
-    if (target.childNodes[0].classList[0] === "slidercontainer") {
-        return;
-    }
+    // console.log(target);
+    // if (target.childNodes[0].classList[0] === "slidercontainer") {
+    //     return;
+    // }
     // added download option for each video on page
 
     for (var video of videoTabs) {
