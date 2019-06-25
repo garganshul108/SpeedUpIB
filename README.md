@@ -20,7 +20,7 @@
 - [x] Open the Chorme Extension Developers option
  - Type the following code into the Chrome / Chromiun Browser URL
 ```shell
-chrome://extension
+chrome://extensions
 ```
 - [x] Click on 'Load Unpacked Package'
 - [x] Select the location of the Repo
