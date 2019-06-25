@@ -91,6 +91,7 @@ function unrun() {
 function waitingForAngular() {
 
     console.log("Anshul's Extension Works");
+    scriptEntry();
     unrun();
 
 }
