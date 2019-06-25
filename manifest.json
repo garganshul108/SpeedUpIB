@@ -7,7 +7,8 @@
 
     "content_scripts": [{
         "matches": [
-            "https://www.interviewbit.com/academy/mentee-dashboard/classroom/*/"
+            "https://www.interviewbit.com/academy/mentee-dashboard/classroom/*/",
+            "https://www.interviewbit.com/academy/mentee-dashboard/classroom/*"
         ],
 
         "js": [
