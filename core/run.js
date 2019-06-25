@@ -2,6 +2,9 @@ let speedSlider;
 let videoTabs;
 let speedDisplay;
 let speeding = false;
+let target;
+
+let hash = [];
 
 
 function speedUp(event) {
@@ -19,13 +22,17 @@ function speedUp(event) {
 
 }
 
-function waitingForAngular() {
 
+function scriptEntry() {
 
-    console.log("Anshul's Extension Works");
-    const target = document.querySelector('video').parentElement;
+    console.log('script entered......');
+
     videoTabs = document.getElementsByTagName('video');
-
+    target = document.querySelector('video').parentElement;
+    // console.log(target);
+    // if (target.childNodes[0].classList[0] === "slidercontainer") {
+    //     return;
+    // }
     // added download option for each video on page
 
     for (var video of videoTabs) {
@@ -62,7 +69,30 @@ function waitingForAngular() {
         }, 100);
         // speedDisplay.innerHTML = speedUpto;
     });
+}
 
+
+function unrun() {
+    console.log('unrun runs........');
+    const navs = document.querySelectorAll('.classroom-nav a');
+    console.log(navs);
+    for (var nav of navs) {
+        console.log(nav);
+        nav.addEventListener('click', function() {
+            scriptEntry();
+
+        });
+    }
+
+}
+
+
+
+function waitingForAngular() {
+
+    console.log("Anshul's Extension Works");
+    scriptEntry();
+    unrun();
 
 }
 
